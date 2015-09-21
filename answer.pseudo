@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+import random
+
+def name_randno():
+	name = input("What's your name? ")
+	print("{} {}".format(name, random.randrange(6, 16)))
+	
+if __name__ == "__main__": name_randno()
