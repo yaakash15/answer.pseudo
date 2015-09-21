@@ -1,8 +1,25 @@
 #!/usr/bin/python3
+
+# Python code for the answer.pseudo challenge.
+# Usage: ./answer.pseudo (If permissions aren't assigned, assign using 'chmod')
+# Author: Sricharan Chiruvolu<mail@sricharan.xyz>
+
+# Import 'random', to be used to generate (pseudo)random number.
 import random
 
+'''\
+name-randno() -  A function that takes a variable name as parameter and returns (to the console) a string 
+in this format: “Name GeneratedNumber”. Eg: “Rahul 11”.
+GeneratedNumber - a random number between 6 and 15.
+TODO: Auth for non-empty strings only.
+TODO: Write unittests.
+'''
 def name_randno():
+	# Get user input
 	name = input("What's your name? ")
+	# random.randrange(a, b) generates a random number in the [a, b) range.
 	print("{} {}".format(name, random.randrange(6, 16)))
 	
+	
+# Call name_randno() as the default function.	
 if __name__ == "__main__": name_randno()
